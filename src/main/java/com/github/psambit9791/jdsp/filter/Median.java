@@ -26,7 +26,7 @@ import java.util.Arrays;
  * @version 2.0
  */
 
-public class Median implements _KernelFilter {
+public class Median1 implements _KernelFilter {
 
     private int windowSize;
 
