@@ -20,7 +20,7 @@ package com.github.psambit9791.jdsp.filter;
  * @author  Sambit Paul
  * @version 2.0
  */
-public class Chebyshev implements _IIRFilter {
+public class Chebyshev1 implements _IIRFilter {
     private double samplingFreq;
     private int filterType;
     private double rippleFactor;
@@ -32,7 +32,7 @@ public class Chebyshev implements _IIRFilter {
      * @param rf The maximum ripple allowed below unity gain in the pass band
      * @param filterType Type of Chebyshev filter. 1: Type I, 2: Type II
      */
-    public Chebyshev(double Fs, double rf, int filterType) {
+    public Chebyshev1(double Fs, double rf, int filterType) {
         this.samplingFreq = Fs;
         this.rippleFactor = rf;
         this.filterType = filterType;
@@ -44,7 +44,7 @@ public class Chebyshev implements _IIRFilter {
      * @param Fs Sampling frequency of input signal
      * @param rf The maximum ripple allowed below unity gain in the pass band
      */
-    public Chebyshev(double Fs, double rf) {
+    public Chebyshev1(double Fs, double rf) {
         this.samplingFreq = Fs;
         this.rippleFactor = rf;
         this.filterType = 1;
