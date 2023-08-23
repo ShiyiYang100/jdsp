@@ -21,7 +21,7 @@ package com.github.psambit9791.jdsp.filter;
  * @author  Sambit Paul
  * @version 2.0
  */
-public class Bessel implements _IIRFilter {
+public class Bessel1 implements _IIRFilter {
     private double samplingFreq;
 
 
@@ -30,7 +30,7 @@ public class Bessel implements _IIRFilter {
      * required to use Bessel filter.
      * @param Fs Sampling frequency of input signal in Hz
      */
-    public Bessel(double Fs) {
+    public Bessel1(double Fs) {
         this.samplingFreq = Fs;
     }
 
