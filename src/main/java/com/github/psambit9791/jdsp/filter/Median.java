@@ -34,7 +34,7 @@ public class Median1 implements _KernelFilter {
      * This constructor initialises the prerequisites required to use Median filter.
      * @throws java.lang.IllegalArgumentException if wsize (3) is greater than or equal to signal length
      */
-    public Median() throws IllegalArgumentException{
+    public Median1() throws IllegalArgumentException{
         this.windowSize = 3;
     }
 
@@ -43,7 +43,7 @@ public class Median1 implements _KernelFilter {
      * @throws java.lang.IllegalArgumentException if wsize is greater than or equal to signal length
      * @param wsize Window or kernel size
      */
-    public Median(int wsize) throws IllegalArgumentException {
+    public Median1(int wsize) throws IllegalArgumentException {
         this.windowSize = wsize;
     }
 
